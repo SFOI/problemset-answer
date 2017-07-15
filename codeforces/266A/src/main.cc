@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main()
+{
+	int n, count = 0;
+	char stones[50] = "";
+	std::cin >> n;
+	std::cin >> stones;
+	for(int i = 0; i < n - 1; i++)
+	{
+		if(stones[i] == stones[i + 1])
+			count++;
+	}
+	std::cout << count;
+	return 0;
+}
+
